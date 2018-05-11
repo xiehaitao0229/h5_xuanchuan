@@ -1,0 +1,118 @@
+.container{
+    width: 7.5rem;
+    height: 100%;
+}
+.header{
+    width: 7.5rem;
+    height: 1.65rem;
+}
+.header_title{
+    font-size: .3rem;
+    margin-left:.3rem;
+    padding-top: 0.25rem;
+}
+.intro{
+    margin-left:.3rem;
+    margin-top:-0.5rem;
+}
+.intro_item{
+    width: 0.42rem;
+    font-size: 0.25rem;
+}
+.item_q,.item_addr,.item_y{
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-right: 0.1rem;
+    padding-top: 0.7rem;
+    vertical-align: text-bottom;
+}
+.position{
+    position: relative;
+}
+.border{
+    border :1px solid #d8d8d8;
+}
+.bob{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.1rem;
+    height: 0.4rem;
+    background: #9571e9;
+}
+.desc_container{
+    font-size: 0.25rem;
+}
+.position{
+    margin-left:0.3rem;
+}
+.position_title{
+    margin:0.22rem 0 0.3rem 0.2rem;
+    font-size:0.3rem;
+}
+.position > p{
+    line-height:0.4rem;
+    letter-spacing:0.05rem
+}
+.footer_border{
+    width: 7.5rem;
+    position: absolute;
+    bottom:1.04rem;
+    left: 0;
+    border: 1px solid #d8d8d8;
+}
+.footer{
+    width: 7.5rem;
+    height: 1.04rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.share_position{
+    width: 3.38rem;
+    height: 0.72rem;
+    border: 1px solid #9571e9;
+}
+.share_position > a{
+    font-size: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgb(0, 0, 0);
+    filter: alpha(opacity=60);
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: none;
+}
+.model_tip{
+    width: 5.02rem;
+    height: 2.8rem;
+    position: absolute;
+    left: 1.5rem;
+    margin-top: 2rem;
+}
+.model_cancel{
+    clear: both;
+    display: block;
+    margin: auto;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 3.5rem;
+}

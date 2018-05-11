@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>职位描述</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <script src="./js/font.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h5 class="header_title">技术架构师</h5>
+            <div class="intro">
+                <span class="intro_item"><img src="./images/full-time job@2x.png" class="item_q" />全职</span>
+                <span class="intro_item"><img src="./images/address@2x.png" class="item_addr" />深圳</span>
+                <span class="intro_item"><img src="./images/position@2x.png" class="item_y" />研发</span>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="desc_container">
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">职责描述</h3>
+                <p>1、主导或者参与系统架构、设计、核心代码开发、系统优化等工作;</p>
+                <p>2、对系统的发展进行规划并推进实施;</p>
+                <p>3、对现有系统不足进行分析，找到瓶颈，重构优化实现或改进系统架构。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">任职要求</h3>
+                <p>1. 五年以上互联网技术研发经验，担任过架构师领导过复杂系统的研发、重构；</p>
+                <p>2. 具有高并发、海量数据的分布式系统研发经验；</p>
+                <p>3、具备模块或子系统的架构设计能力,掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。</p>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer">
+            <div class="share_position">
+                <a href="#" id="share">分享职位</a>
+            </div>
+        </div>
+        <div class="model" id="model">
+            <img class="model_tip" src="./images/tips@2x.png" alt="">
+            <img id="cancel" class="model_cancel" src="./images/cancel@2x.png" alt="">
+        </div>
+    </div>
+    <script>
+        var share = document.getElementById('share');
+        var cancel = document.getElementById('cancel');
+        var model = document.getElementById('model');
+        share.addEventListener('click',function () {
+            model.style.display = "block"
+        })
+        cancel.addEventListener('click',function () {
+            model.style.display = "none"
+        })
+    </script>
+</body>
+</html>

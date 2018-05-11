@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>职位描述</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <script src="./js/font.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h5 class="header_title">Web前端开发工程师</h5>
+            <div class="intro">
+                <span class="intro_item"><img src="./images/full-time job@2x.png" class="item_q" />全职</span>
+                <span class="intro_item"><img src="./images/address@2x.png" class="item_addr" />深圳</span>
+                <span class="intro_item"><img src="./images/position@2x.png" class="item_y" />研发</span>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="desc_container">
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">职责描述</h3>
+                <p>1、负责集团相关产品研发;</p>
+                <p>2、通过技术提升用户体验和可用性;</p>
+                <p>3、深入发掘业务需求，沉淀技术积累。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">任职要求</h3>
+                <p>1、大专及以上学历，具有三年以上相关工作经验;</p>
+                <p>2、扎实的基础知识，熟练HTML/CSS/Javascript;</p>
+                <p>3、熟悉React、Mobx、Redux、Vue、React Native等技术;</p>
+                <p>4、熟悉模块化、前端编译和构建工具、性能优化;</p>
+                <p>5、熟悉TCP/IP、HTTP2.0、HTTPS通讯协议。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">加分项</h3>
+                <p>1、多端解决能力 (H5、PC、App);</p>
+                <p>2、关注 Web 发展，热爱新技术，善于沟通，性格活跃</p>
+                <p>3、有不止一门语言（如Python, Go, PHP, Java）的实际开发经验。</p>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer">
+            <div class="share_position">
+                <a href="#" id="share">分享职位</a>
+            </div>
+        </div>
+        <div class="model" id="model">
+            <img class="model_tip" src="./images/tips@2x.png" alt="">
+            <img id="cancel" class="model_cancel" src="./images/cancel@2x.png" alt="">
+        </div>
+    </div>
+    <script>
+        var share = document.getElementById('share');
+        var cancel = document.getElementById('cancel');
+        var model = document.getElementById('model');
+        share.addEventListener('click',function () {
+            model.style.display = "block"
+        })
+        cancel.addEventListener('click',function () {
+            model.style.display = "none"
+        })
+    </script>
+</body>
+</html>

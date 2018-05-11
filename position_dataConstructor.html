@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>职位描述</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <script src="./js/font.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h5 class="header_title">大数据架构师</h5>
+            <div class="intro">
+                <span class="intro_item"><img src="./images/full-time job@2x.png" class="item_q" />全职</span>
+                <span class="intro_item"><img src="./images/address@2x.png" class="item_addr" />深圳</span>
+                <span class="intro_item"><img src="./images/position@2x.png" class="item_y" />研发</span>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="desc_container">
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">职责描述</h3>
+                <p>1、负责大数据基础平台的整体规划和架构设计，参与需求分析、架构设计、技术决策以及详细设计;</p>
+                <p>2、为现有大数据平台提供性能调优、架构优化重组，解决系统中的关键问题和技术难题;</p>
+                <p>3、把握基础业务复杂系统的设计，确保系统的架构质量，编写核心部分代码;</p>
+                <p>4、指导和培训工程师，不断提升团队能力;</p>
+                <p>5、持续挑战新的技术方向，攻克大数据量，高并发，高稳定性，易用性等各种技术难点。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">任职要求</h3>
+                <p>1、五年以上互联网大数据基础架构工作经验，具备数据仓库，数据建模，数据监控管理的建设和维护相关经验，了解互联网大数据架构发展趋势；</p>
+                <p>2、熟悉分布式系统的架构，有分布式实时和离线计算平台架构和开发相关经验，具备海量数据清洗、分析处理及存储的相关的实践经验;</p>
+                <p>3、熟练使用并理解Hadoop架构和生态（Yarn、Hive、Spark、Kylin、Kafka、HBase、HDFS、Sqoop、Flume、ElasticSearch等）;</p>
+                <p>4、熟悉spark架构（如：spark streaming、spark graphx、spark sql等）</p>
+                <p>5、熟悉图数据库架构（如：neo4j、janusgraph等）;</p>
+                <p>6、具有大规模分布式系统的调优经验（如JVM调优、SQL调优、缓存优化、RPC优化等）;</p>
+                <p>7、有能力进行平台调优和业务支撑设计，了解上述开源项目源码者优先;</p>
+                <p>8、具有团队合作、良好的沟通技巧和主动挑战困难能力。</p>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer">
+            <div class="share_position">
+                <a href="#" id="share">分享职位</a>
+            </div>
+        </div>
+        <div class="model" id="model">
+            <img class="model_tip" src="./images/tips@2x.png" alt="">
+            <img id="cancel" class="model_cancel" src="./images/cancel@2x.png" alt="">
+        </div>
+    </div>
+    <style>
+        .footer_border{
+            bottom: -2.7rem;
+        }
+        .footer{
+            bottom: -4rem;
+        }
+    </style>
+    <script>
+        var share = document.getElementById('share');
+        var cancel = document.getElementById('cancel');
+        var model = document.getElementById('model');
+        share.addEventListener('click',function () {
+            model.style.display = "block"
+        })
+        cancel.addEventListener('click',function () {
+            model.style.display = "none"
+        })
+    </script>
+</body>
+</html>

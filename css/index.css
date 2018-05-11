@@ -1,0 +1,102 @@
+
+.fp-tableCell{
+     vertical-align: 0;
+}
+.recruitment{
+    width: 7.5rem;
+    height: 6.18rem;
+    background: url("../images/1.png")center center no-repeat;
+    background-size: cover;
+}
+.recruitment_img{
+    width: 7.5rem;
+    height: 6.18rem;
+}
+.position{
+    position: relative;
+    height: 3.25rem;
+    background: url("../images/2.png") top center no-repeat;
+    background-size: cover;
+    background-color: #291459;
+}
+.position_item{
+    width: 2.5rem;
+    float: left;
+}
+.more{
+    letter-spacing: 0.05rem;
+    font-size:.24rem;
+    color: #ffffff;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0;
+    text-decoration: none;
+}
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-top: 0.15rem solid transparent;
+    border-left: 0.15rem solid #ff9b02;
+    border-bottom: 0.15rem solid transparent;
+    position: absolute;
+    top: 0.1rem;
+    right: -0.3rem;
+}
+.item_manager,.item_operation,.item_architect{
+    width: 1.16rem;
+    height: 0.55rem;
+    clear: both;
+    display: block;
+    margin:auto;
+    margin-bottom:0.2rem;
+}
+.item_btn{
+    width: 1.49rem;
+    height: 0.8rem;
+    clear: both;
+    display: block;
+    margin:auto;
+    margin-top:0.3rem;
+}
+.item_name{
+    font-size: 0.24rem;
+    font-weight:bold;
+    color: #ffffff;
+    text-align: center;
+}
+.item_money{
+    font-size: 0.24rem;
+    font-weight:bold;
+    color: #ffa800;
+    text-align: center;
+}
+.introduction{
+    height: 4.18rem;
+    background: url("../images/3.png") top center no-repeat;
+    background-size: cover;
+    background-color: #291459;
+}
+.welfare{
+    width: 7.5rem;
+    height: 3.60rem;
+    background: url("../images/4.png") bottom center no-repeat;
+    background-size: cover;
+    background-color: #291459;
+}
+
+.join{
+    position: relative;
+    width: 7.5rem;
+    height:6.72rem;
+    background: url("../images/5.png") top  center no-repeat;
+    background-size: cover;
+    background-color: #291459;
+}
+.erweima{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(140%,60%);
+}

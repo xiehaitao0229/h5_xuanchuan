@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>职位描述</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <script src="./js/font.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h5 class="header_title">运维开发工程师</h5>
+            <div class="intro">
+                <span class="intro_item"><img src="./images/full-time job@2x.png" class="item_q" />全职</span>
+                <span class="intro_item"><img src="./images/address@2x.png" class="item_addr" />深圳</span>
+                <span class="intro_item"><img src="./images/position@2x.png" class="item_y" />研发</span>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="desc_container">
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">职责描述</h3>
+                <p>1.负责ITIL、自动化运维平台、监控平台及其组件的设计和开发;</p>
+                <p>2.负责优化、改进运维支持系统，建设应用监控系统，并保证其安全高效稳定运行;</p>
+                <p>3.通过技术手段控制和优化成本，提升资源利用率、提高自动化运维水平、故障响应能力、提升迭代效率、降低运维人力成本;</p>
+                <p>4.运维相关的新技术的研究。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">任职要求</h3>
+                <p>1.计算机相关专业本科以上毕业，5年以上的工作经验; 有一定实际运维工作经验;</p>
+                <p>2. 熟悉ITIL/ITSM服务管理方法;，并主导或参与过CMDB、自动化运维平台、监控系统、持续交付等项目的开发;</p>
+                <p>3.熟悉php或者java语言；熟悉Prometheus\zabbix的监控原理和使用；精通python语言进行脚本编写；精通Linux操作系统;</p>
+                <p>4.认同DevOps文化，研究DevOps新技术和方向，持续提高运维效率和质量。</p>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer">
+            <div class="share_position">
+                <a href="#" id="share">分享职位</a>
+            </div>
+        </div>
+        <div class="model" id="model">
+            <img class="model_tip" src="./images/tips@2x.png" alt="">
+            <img id="cancel" class="model_cancel" src="./images/cancel@2x.png" alt="">
+        </div>
+    </div>
+    <script>
+        var share = document.getElementById('share');
+        var cancel = document.getElementById('cancel');
+        var model = document.getElementById('model');
+        share.addEventListener('click',function () {
+            model.style.display = "block"
+        })
+        cancel.addEventListener('click',function () {
+            model.style.display = "none"
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>职位描述</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <script src="./js/font.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h5 class="header_title">发布管理</h5>
+            <div class="intro">
+                <span class="intro_item"><img src="./images/full-time job@2x.png" class="item_q" />全职</span>
+                <span class="intro_item"><img src="./images/address@2x.png" class="item_addr" />深圳</span>
+                <span class="intro_item"><img src="./images/position@2x.png" class="item_y" />研发</span>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="desc_container">
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">职责描述</h3>
+                <p>1.配合产品经理、项目经理完成版本发布工作;</p>
+                <p>2.能够解决Linux、Windows操作系统出现的常规异常问题；能够独立完成操作系统的基本配置;</p>
+                <p>3.及时处理版本发布中的各类问题，包括沟通协调开发人员、产品经理、项目经理处理异常;</p>
+                <p>4.能够编写脚本工具，提高版本发布效率。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">任职要求</h3>
+                <p>1.计算机或相关专业毕业，本科以上学历，至少4年以上相关工作经验;</p>
+                <p>2.熟练掌握Linux操作系统；精通Tomcat/Nginx/Apache等常用中间件的安装与使用;至少熟练掌握 Shell/Python/Perl 中一种或多种脚本语言; 了解基本网络知识、TCP/IP协议；了解防火墙、负载均衡基本原理;</p>
+                <p>3. 熟悉docker，KUBEMETES等容器技术;</p>
+                <p>4.熟练掌握jenkins、ansible、GitLab等工具; 了解监控工具Zabbix/Nagios的配置与使用。</p>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer">
+            <div class="share_position">
+                <a href="#" id="share">分享职位</a>
+            </div>
+        </div>
+        <div class="model" id="model">
+            <img class="model_tip" src="./images/tips@2x.png" alt="">
+            <img id="cancel" class="model_cancel" src="./images/cancel@2x.png" alt="">
+        </div>
+    </div>
+    <script>
+        var share = document.getElementById('share');
+        var cancel = document.getElementById('cancel');
+        var model = document.getElementById('model');
+        share.addEventListener('click',function () {
+            model.style.display = "block"
+        })
+        cancel.addEventListener('click',function () {
+            model.style.display = "none"
+        })
+    </script>
+</body>
+</html>

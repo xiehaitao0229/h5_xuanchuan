@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>设计页面</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/design.css">
+  <script src="./js/font.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="header_container">
+    <div class="header">
+      <img src="./images/search@2x.png" class="icon_search" alt="">
+      <form action="javascript:search();">
+        <input class="header_search" style="padding-left: 0.8rem;" type="search"
+               autocomplete="on" placeholder="搜索职位关键词" id="search">
+      </form>
+      <!-- <img src="./images/cancel@2x.png" class="icon_cancel" alt="">-->
+      <span class="cancel">取消</span>
+    </div>
+    <div class="header_title-container">
+      <p class="header_title">全部</p>
+      <div class="triangle-down" id="triangle"></div>
+      <ul class="more_position" id="more_position">
+        <li class="more_position_item"><p>全部</p></li>
+        <li class="more_position_item" data-position="研发" data-target="yanfa"><p>研发</p></li>
+        <li class="more_position_item" data-position="产品/设计" data-target="product"><p>产品/设计</p></li>
+        <li class="more_position_item" data-position="职能/支持" data-target="zhineng"><p>职能/支持</p></li>
+        <li class="more_position_item" data-position="市场/销售" data-target="sell"><p>市场/销售</p></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border"></div>
+  <div class="position_container">
+    <ul class="mock">
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_constructor.html">
+          <div class="item_title">技术架构师</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_seniorEngineer.html">
+          <div class="item_title">高级研发工程师</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_dataConstructor.html">
+          <div class="item_title">大数据架构师</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_dataEngineer.html">
+          <div class="item_title">大数据开发工程师</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="产品/设计">
+        <a class="position_item_a" href="position_maneger.html">
+          <div class="item_title">产品经理</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_webEngineer.html">
+          <div class="item_title">web前端工程师</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_operationEngineer.html">
+          <div class="item_title">运维开发工程师</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_releaseManager.html">
+          <div class="item_title">发布管理</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <li class="position_item" data-position="研发">
+        <a class="position_item_a" href="./position_releaseManager.html">
+          <div class="item_title">windos生产系统运维</div>
+          <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+          <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+          <div class="triangle-right"></div>
+        </a>
+        <div class="border"></div>
+      </li>
+      <!--  <li class="position_item" data-position="产品/设计">
+          <a class="position_item_a" href="#">
+            <div class="item_title">视觉设计师</div>
+            <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+            <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+            <div class="triangle-right"></div>
+          </a>
+          <div class="border"></div>
+        </li>
+        <li class="position_item" data-position="产品/设计">
+          <a class="position_item_a" href="#">
+            <div class="item_title">交互设计师</div>
+            <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+            <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+            <div class="triangle-right"></div>
+          </a>
+          <div class="border"></div>
+        </li>
+        <li class="position_item" data-position="产品/设计">
+          <a class="position_item_a" href="#">
+            <div class="item_title">UI设计师</div>
+            <span class="item_intro"><img src="./images/full-time job2@2x.png" class="item_addr"/>全职</span>
+            <span class="item_intro"><img src="./images/position2@3x.png" class="item_y"/>产品/设计</span>
+            <div class="triangle-right"></div>
+          </a>
+          <div class="border"></div>
+        </li>-->
+    </ul>
+    <div class="no_more"><p>——没有更多数据了——</p></div>
+  </div>
+</div>
+<div class="model" id="model"></div>
+<script>
+  var flag = true
+  //  切换职位类别事件
+  $('.header_title').click(function () {
+    if (flag) {
+      $('#more_position').slideDown()
+      $('.mock').show()
+      $('#triangle').removeClass("triangle-down").addClass("triangle-up")
+      $('#model').css('display', 'block')
+      flag = false
+    } else {
+      $('#more_position').slideUp()
+      $('.mock').show()
+      $('#triangle').removeClass("triangle-up").addClass("triangle-down")
+      $('#model').css('display', 'none')
+      flag = true
+    }
+  })
+
+  $('.more_position_item').click(function () {
+       $('.header_title').html($(this).find('p').html())
+  })
+
+  //  获取搜索框光标
+  $('#search').focus(function () {
+    $('.icon_search').css('left', '0.6rem')
+    $('.header_search').css({'text-align': 'left', 'padding-left': '1rem', 'width': '5.52rem'})
+    $('.icon_cancel').css('display', 'block')
+    $('.cancel').css('display', 'block')
+  })
+
+  $('.cancel').click(function () {
+    $('.icon_search').css('left', '2.2rem')
+    $('.header_search').css({'text-align': 'center', 'padding-left': '0.8rem', 'width': '6.92rem'})
+    $(this).css('display', 'none')
+    $('.icon_cancel').css('display', 'none')
+    $('.header_search').val('')
+  })
+
+  //  拿到职位列表
+  function list_title () {
+    var lis = $('.mock li')
+    var list_title_arr = []
+    for (var i = 0; i < lis.length; i++) {
+      var titles = $(lis[i])[0].querySelector('.item_title').innerHTML
+      list_title_arr.push(titles)
+    }
+    return {
+      list_title_arr: list_title_arr,
+      lis: lis
+    }
+  }
+
+
+  //  搜索图标点击搜索事件
+  $('.icon_search').click(function () {
+    var title = $('.header_search').val()
+    var titles = list_title()['list_title_arr']
+    var lists = list_title()['lis']
+    var html = ''
+    // console.log(lists)
+    for (var i = 0; i < titles.length; i++) {
+      if (titles[i].indexOf(title) >= 0) {
+        html = '<ul class="mock"></ul>'
+        $('.position_container').html(html)
+        $('.mock').html(lists[i])
+        return
+      } else if (titles[i].indexOf(title) < 0) {
+        $('.mock').css('display', 'none')
+        $('.no_more').css('display', 'block')
+      }
+    }
+  })
+
+  //  手机键盘搜索事件
+  $(".header_search").bind('keyup', function (e) {
+    var event = arguments.callee.caller.arguments[0] || window.event//消除浏览器差异
+    var keycode = event.keyCode
+    var title = $('.header_search').val()
+    var titles = list_title()['list_title_arr']
+    var lists = list_title()['lis']
+    var html = ''
+    //获取搜索框的值
+    if (keycode == '13') {
+      e.preventDefault()
+      //请求搜索接口
+      // console.log(lists)
+      for (var i = 0; i < titles.length; i++) {
+        if (titles[i].indexOf(title) >= 0) {
+          html = '<ul class="mock"></ul>'
+          $('.position_container').html(html)
+          $('.mock').html(lists[i])
+          return
+        } else if (titles[i].indexOf(title) < 0) {
+          $('.mock').css('display', 'none')
+          $('.no_more').css('display', 'block')
+        }
+      }
+    }
+  })
+
+  $('.more_position_item').click(function (e) {
+    var $list = $('.mock .position_item')
+    $('.more_position').slideUp()
+    $('#triangle').removeClass("triangle-up").addClass("triangle-down")
+    $('#model').css('display', 'none')
+    var position = e.currentTarget.dataset.position
+    if (position) {
+      for (var i = 0, l = $list.length; i < l; i++) {
+        var pos = $list[i].getAttribute('data-position')
+        if (pos.indexOf(position) > -1) {
+          $list[i].style.display = 'block'
+        } else {
+          $list[i].style.display = 'none'
+        }
+      }
+    } else {
+      $list.show()
+    }
+  })
+
+
+  //  点击保存上一个页面
+  function sessionPages () {
+    $('.position_item').click(function (e) {
+      var arrPosition = []
+      $('.mock li').each(function (index,ele) {
+          if($(ele).css('display')!='none'){
+              arrPosition.push($(ele).get(0).outerHTML);
+          }
+      })
+      sessionStorage.setItem('positions',arrPosition)  //  保存当前的职位信息
+    })
+  }
+  sessionPages();
+
+
+  $(function () {
+      if(sessionStorage.getItem('positions')){
+       //   console.log(sessionStorage.getItem('positions'))
+          $('.position_item').each(function (item) {
+              $(item).css('display','none')
+          })
+          var sessioPositions = sessionStorage.getItem('positions').split(',')
+          var html = '';
+          for(var i=0;i<sessioPositions.length;i++){
+              (function (i) {
+                  html+=sessioPositions[i]
+              })(i)
+          }
+          $('.mock').html(html)
+
+      }
+     /* $(window).unload(function () {
+          sessionStorage.removeItem('positions')
+      })*/
+  })
+</script>
+</body>
+</html>

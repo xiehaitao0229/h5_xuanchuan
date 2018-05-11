@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>职位描述</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/position.css">
+    <script src="./js/font.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h5 class="header_title">研发经理</h5>
+            <div class="intro">
+                <span class="intro_item"><img src="./images/full-time job@2x.png" class="item_q" />全职</span>
+                <span class="intro_item"><img src="./images/address@2x.png" class="item_addr" />深圳</span>
+                <span class="intro_item"><img src="./images/position@2x.png" class="item_y" />研发</span>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="desc_container">
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">职责描述</h3>
+                <p>1、负责技术团队日常管理工作,包括工作流程梳理、组织结果优化、岗位职责界定、技术人才配置、人才梯队建设、团队能力提升、绩效评估与团队激励等,打造高效团队;</p>
+                <p>2、参与公司业务规划及流程优化,以客户为中心,与其他部门良好协作,共同推动公司发展。</p>
+            </div>
+            <div class="position">
+                <div class="bob"></div>
+                <h3 class="position_title">任职要求</h3>
+                <p>1、本科及以上学历,软件开发或软件工程等相关学历;</p>
+                <p>2、至少8年以上JAVA/C#技术体系产品研发和管理经验;熟练JAVA/C#的事务、消息、线程、并发等;</p>
+                <p>3、具备软件产品规划,分析和设计软件系统架构的能力。</p>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer">
+            <div class="share_position">
+                <a href="#" id="share">分享职位</a>
+            </div>
+        </div>
+        <div class="model" id="model">
+            <img class="model_tip" src="./images/tips@2x.png" alt="">
+            <img id="cancel" class="model_cancel" src="./images/cancel@2x.png" alt="">
+        </div>
+    </div>
+    <script>
+        $(function () {
+            function showshadow() {
+                var share = document.getElementById('share');
+                var cancel = document.getElementById('cancel');
+                var model = document.getElementById('model');
+                share.addEventListener('click',function () {
+                    model.style.display = "block"
+                })
+                cancel.addEventListener('click',function () {
+                    model.style.display = "none"
+                })
+            }
+            showshadow()
+
+        })
+    </script>
+</body>
+</html>
